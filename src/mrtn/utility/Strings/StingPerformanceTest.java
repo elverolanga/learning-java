@@ -4,11 +4,15 @@ public class StingPerformanceTest
 {
 	public static void main(String[] args) 
 	{
-		
-	
 		long start = System.currentTimeMillis();
-		concatStringBuilder(500);
+		concatString(500);
 		long end = System.currentTimeMillis();
+		
+		System.out.println("Tempo de execução: " + (end - start) + "ms");
+	
+		 start = System.currentTimeMillis();
+		concatStringBuilder(500);
+		 end = System.currentTimeMillis();
 		
 		System.out.println("Tempo de execução StringBuilder: " + (end - start) + "ms");
 
