@@ -23,6 +23,8 @@ public class InternationalizatingCurrencies {
 		for(NumberFormat n : nf)
 		{
 			System.out.println(n.format(valor));
-		}
+		}		
+		
+		//And this is how you internationalize Values
 	}
 }
